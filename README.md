@@ -67,5 +67,5 @@ cmake --build build -j4
 
 cd ..
 
-# Dataset
+# Dataset & Groundtruth
 https://drive.google.com/drive/folders/18fZXh4w_nzG5l6O4t4NY6uGxS95BezQ0?usp=sharing 
