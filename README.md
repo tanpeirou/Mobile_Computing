@@ -22,10 +22,12 @@ Audio Sample
 
 # Update package list and install system dependencies
 sudo apt update
+
 sudo apt install -y ffmpeg git python3-pip python3-venv build-essential cmake
 
 # Create and activate a Python virtual environment
 python3 -m venv venv
+
 source venv/bin/activate
 
 # Install all necessary Python libraries
