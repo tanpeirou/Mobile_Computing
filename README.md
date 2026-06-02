@@ -1,10 +1,17 @@
 Dataset
+
   ↓
+  
 Audio Sample
+
   ↓
+  
 +---------------------+
+
 | Experiment Pipeline |
+
 +---------------------+
+
 
 1. Moonshine Tiny
 2. Whisper Tiny
@@ -23,38 +30,37 @@ source venv/bin/activate
 
 # Install all necessary Python libraries
 pip install torch torchaudio
+
 pip install moonshine-voice
+
 pip install openai-whisper
+
 pip install transformers
+
 pip install accelerate
+
 pip install jiwer
+
 pip install psutil
+
 pip install pandas
+
 pip install tqdm
+
 pip install librosa
+
 pip install soundfile
+
 pip install faster-whisper 
+
 
 # Install llama.cpp
 git clone https://github.com/ggerganov/llama.cpp 
-cd llama.cpp 
-cmake -B build 
-cmake --build build -j4 
-cd ..
 
-asr_llm_thesis/
-│
-├── data/
-│   ├── tongue_twister/
-│   │   ├── twister1.wav
-│   │   └── ...
-│   └── groundtruth/
-│       ├── twister1.txt
-│       └── ...
-│
-├── models/
-│   └── qwen2.5-1.5b/          # Hugging Face local download directory
-│
-├── resource_monitor.py        # Utility to track latency and RAM
-├── systems.py                 # Defines all 6 experiment configurations
-└── run_experiment.py         # Main execution loop and metrics exporter
+cd llama.cpp 
+
+cmake -B build 
+
+cmake --build build -j4 
+
+cd ..
